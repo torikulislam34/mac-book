@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="grid grid-cols-2 ">
+            <!-- image area -->
+            <div class="image p-16">
+                <img src="images/mac.png" alt="">   
+            </div>
+            <!-- text area -->
+            <div class="p-16">
+               <div>
+                <h1 class="text-6xl mb-3">Mac-Book-Pro.</h1>
+                <p class="text-6xl mb-3">Customize your blue 24-inch iMaac with Appal M1 chip.</p>
+                <p class="text-2xl text-gray-500"> Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficency cores 7-core CPU, 16 core Neural Engine 8 GB unified memory 256 GB SSD storage Two Thunderbold/USB 4 ports Magic Mause Magic Keyboard US English</p>
+               </div>
+               <div class="mt-16">
+                   <h2 class="text-3xl mb-2">Memory</h2>
+                   <button id="8gb-memory" class="p-2 text-2xl border-2 border-gray-400 text-gray-500 rounded-md md:hover:bg-blue-300">8GB unified memory</button> 
+                   <button id="16gb-memory" class="p-2 text-2xl border-2 border-gray-400 text-gray-500 rounded-md md:hover:bg-blue-300">16GB unified memory</button>
+               </div>
+               <div class="mt-16">
+                   <h2 class="text-3xl mb-2">Storage</h2>
+                   <button id="fixed-storage" class="p-2 text-2xl border-2 border-gray-400 text-gray-500 rounded-md md:hover:bg-blue-300" >256GB SSD storage</button>
+                   <button id="update-storage1"  class="p-2 text-2xl border-2 border-gray-400 text-gray-500 rounded-md md:hover:bg-blue-300" >512GB SSD storage</button>
+                   <button id="update-storage2" class="p-2 text-2xl border-2 border-gray-400 text-gray-500 rounded-md md:hover:bg-blue-300" >1TB SSD storage</button>
+               </div>
+               <div class="mt-16">
+                    <h2 class="text-3xl mb-2">Choose your delivery option</h2>
+                    <button id="free-delivery" class="p-2 text-2xl border-2 border-gray-400 text-gray-500 w-2/4 mb-2 rounded-md md:hover:bg-blue-300" >Friday, Aug 25 FREE Prime Delivery</button>
+                    <button id="delivery-minCharge" class="p-2 text-2xl border-2 border-gray-400 text-gray-500 w-2/4 rounded-md md:hover:bg-blue-300" >Friday, Aug 21 Delivery charge $20</button>
+               </div>
+               <div class="grid grid-cols-2 mt-16 text-3xl gap-2 ">
+                    <h2 class="mb-4">Best Price</h2> 
+                    <h2 class="mb-4">$<span id="bese-price">1299</span></h2>
+                </div>
+                <hr class="w-3/4">
+                <div class="grid grid-cols-2 mt-3 text-3xl gap-2">
+                    <h2 class="mb-4">Extra Memory Cost</h2>
+                    <h2 class="mb-4">$<span id="extra-memory">0</span></h2>
+                </div>
+                <hr class="w-3/4">
+                <div class="grid grid-cols-2 mt-3 text-3xl gap-2">
+                    <h2 class="mb-4">Extra Storage Cost</h2>
+                    <h2 class="mb-4">$<span id="extra-storage">0</span></h2>
+                </div>
+                <hr class="w-3/4">
+                <div class="grid grid-cols-2 mt-3 text-3xl gap-2">
+                    <h2 class="mb-4">Delivery Charge</h2>
+                    <h2 class="w-3/4 mb-4">$<span id="delivery-charge">0</span></h2>
+                </div>
+                <hr class="border-black w-3/4">
+                <div class="grid grid-cols-2 mt-3 text-3xl gap-2">
+                    <h2 class="mb-4">Total Price</h2>
+                    <h2 class="mb-4">$<span id="total-price1">1299</span> </h2>
+                </div>
+                <hr class="w-3/4">
+                <div class="text-3xl mt-3">
+                    <h2>Add promo code</h2>
+                    <input id="promo-input" class="border-2 border-gray-400  p-4 rounded-md mt-3" type="text">
+                    <button id="promo-button" class="rounded-md bg-red-600 p-4 text-white ">Apply</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <footer class="text-5xl text-center mt-8">Total: $<span id="update-total-price">1299</span></footer>
+    <script src="js/mac-book.js"></script>
+</body>
+</html>
